@@ -19,7 +19,6 @@ namespace Geometry.GeometryObjects
             if (ab >= bc + ca || bc >= ca + ab || ca >= ab + bc)
                 throw new GeometryException("Треугольник не может быть инициализирован, так как одна из его сторон больше либо равна сумме двух других");
 
-
         }
 
         public double GetSquare()
