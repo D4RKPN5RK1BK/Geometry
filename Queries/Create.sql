@@ -1,4 +1,3 @@
---Create database Store;
 USE Store;
 GO
 
