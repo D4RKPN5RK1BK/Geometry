@@ -1,6 +1,6 @@
 select 
-	Products.*,
-	Categories.*
-from ProductCategories 
-	full join Products on Products.Id = ProductCategories.ProductId
-	full join Categories on Categories.Id = ProductCategories.CategoryId
+	Products.[Name] as ProductName,
+	Categories.[Name] as CategoryName
+from Products
+	left join ProductCategories on Products.Id = ProductCategories.ProductId
+	left join Categories on Categories.Id = ProductCategories.CategoryId

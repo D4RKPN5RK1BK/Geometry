@@ -1,19 +1,19 @@
 USE Store;
 GO
 
-drop table if exists Products;
+drop table if exists Producs;
 drop table if exists Categories;
 drop table if exists ProductCategories;
 
 create table Products(
 	Id int identity,
-	Desciption nvarchar(50),
+	[Name] nvarchar(50),
 	constraint PK_Products_Id primary key clustered (Id)
 );
 
 create table Categories(
 	Id int identity,
-	Desciption nvarchar(50),
+	[Name] nvarchar(50),
 	constraint PK_Categories_Id primary key clustered (Id)
 );
 
